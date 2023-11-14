@@ -1,14 +1,8 @@
 import { MessageServices } from "@/services/messages.service";
-import { Product } from "@/shared/types/product";
+import { CartMenuProps } from "@/types/cart-menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useEffect, useState } from "react";
 import { CartContainer, CloseButton } from "./style";
-interface CartMenuProps {
-  isOpen: boolean;
-  onClose: () => void;
-  updateCartItems: (newItemCount: Product[]) => void;
-  receivedCartItems: Product[];
-}
 
 const CartMenu: React.FC<CartMenuProps> = ({
   isOpen,

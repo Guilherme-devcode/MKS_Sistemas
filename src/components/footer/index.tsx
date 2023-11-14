@@ -1,5 +1,3 @@
-// components/Footer.js
-
 const Footer = () => {
   return (
     <footer

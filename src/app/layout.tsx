@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "@/components/footer/footer";
+import Footer from "@/components/footer";
 import StyledComponentsRegistry from "@/lib/registry";
 import theme from "@/styles/theme";
 import "bootstrap/dist/css/bootstrap.min.css";

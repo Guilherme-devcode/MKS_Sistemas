@@ -1,8 +1,8 @@
 "use client";
-import CartMenu from "@/components/cart-menu/cart";
-import Header from "@/components/header/header";
-import ProductList from "@/components/product-list/productList";
-import { Product } from "@/shared/types/product";
+import CartMenu from "@/components/cart-menu";
+import Header from "@/components/header";
+import ProductList from "@/components/product-list";
+import { Product } from "@/types/product";
 import { useState } from "react";
 
 export default function Home() {

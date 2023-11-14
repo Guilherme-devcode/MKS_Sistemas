@@ -1,6 +1,6 @@
-import { Product } from "@/shared/types/product";
+import { Product } from "@/types/product";
 import { fireEvent, render } from "@testing-library/react";
-import CartMenu from "../cart";
+import CartMenu from "..";
 
 jest.mock("@/services/messages.service", () => ({
   MessageServices: jest.fn(() => ({

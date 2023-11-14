@@ -1,5 +1,5 @@
 import { fireEvent, render } from "@testing-library/react";
-import Header from "../header";
+import Header from "..";
 
 describe("Header Component", () => {
   it("renders Header correctly", () => {

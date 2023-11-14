@@ -1,16 +1,12 @@
 "use client";
 import { MessageServices } from "@/services/messages.service";
 import { fetchProducts } from "@/services/product.service";
-import { Product } from "@/shared/types/product";
+import { Product } from "@/types/product";
+import { ListProductsProps } from "@/types/product-list";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { Skeleton } from "@mui/material";
 import { useEffect, useState } from "react";
 import { GridContainer, ProductCard } from "./style";
-
-interface ListProductsProps {
-  updateCartItems: (newItem: Product[]) => void;
-  receivedCartItems: Product[];
-}
 
 const ProductList: React.FC<ListProductsProps> = ({
   updateCartItems,

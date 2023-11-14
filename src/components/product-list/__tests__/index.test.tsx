@@ -1,7 +1,7 @@
 import { fetchProducts } from "@/services/product.service";
-import { Product } from "@/shared/types/product";
+import { Product } from "@/types/product";
 import { render, waitFor } from "@testing-library/react";
-import ProductList from "../productList";
+import ProductList from "..";
 
 jest.mock("@/services/product.service", () => ({
   fetchProducts: jest.fn(),

@@ -1,4 +1,5 @@
 "use client";
+import { HeaderProps } from "@/types/header-menu";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import {
   Brand,
@@ -7,11 +8,6 @@ import {
   StyledContainerHeader,
   StyledNavbar,
 } from "./style";
-
-interface HeaderProps {
-  onToggleCart: () => void;
-  cartItemCount: number;
-}
 
 const Header: React.FC<HeaderProps> = ({ onToggleCart, cartItemCount }) => {
   return (
