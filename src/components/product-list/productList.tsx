@@ -42,7 +42,7 @@ const ProductList: React.FC<ListProductsProps> = ({
   };
 
   return (
-    <GridContainer className="p-5">
+    <GridContainer className="p-5 h-100">
       {loading
         ? Array.from({ length: 8 }).map((_, index) => (
             <ProductCard className="p-2" key={index}>

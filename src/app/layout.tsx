@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/footer/footer";
 import StyledComponentsRegistry from "@/lib/registry";
 import theme from "@/styles/theme";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,7 +8,6 @@ import { Montserrat } from "next/font/google";
 import styled, { ThemeProvider } from "styled-components";
 
 const Body = styled.body`
-  height: 100vh;
   box-sizing: border-box;
   *::-webkit-scrollbar {
     width: 5px;
@@ -50,7 +50,10 @@ export default function RootLayout({
     <html lang="en" className={montSerrat.className}>
       <StyledComponentsRegistry>
         <ThemeProvider theme={theme}>
-          <Body>{children}</Body>
+          <Body>
+            {children}
+            <Footer />
+          </Body>
         </ThemeProvider>
       </StyledComponentsRegistry>
     </html>

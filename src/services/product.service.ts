@@ -1,3 +1,4 @@
+import { ProductsResponse } from "@/shared/types/product";
 import axios from "axios";
 
 export async function fetchProducts(

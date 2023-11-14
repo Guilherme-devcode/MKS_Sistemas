@@ -18,12 +18,15 @@ export default function Home() {
   };
 
   return (
-    <div className="h-100 w-100">
+    <div className="w-100 h-100">
       <Header
         onToggleCart={handleToggleCart}
         cartItemCount={cartItems.length}
       />
-      <ProductList receivedCartItems={cartItems} updateCartItems={updateCartItems} />
+      <ProductList
+        receivedCartItems={cartItems}
+        updateCartItems={updateCartItems}
+      />
       {isCartOpen && (
         <CartMenu
           isOpen={isCartOpen}

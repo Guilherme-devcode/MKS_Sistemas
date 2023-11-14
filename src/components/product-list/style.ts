@@ -4,6 +4,8 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  overflow: auto;
+  max-height: 75vh;
   max-width: 1200px;
   margin: 0 auto !important;
   overflow-x: auto;
