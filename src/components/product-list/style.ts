@@ -8,7 +8,11 @@ export const GridContainer = styled.div`
   max-height: 75vh;
   max-width: 1200px;
   margin: 0 auto !important;
+  justify-items: center;
   overflow-x: auto;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const ProductCard = styled.li`

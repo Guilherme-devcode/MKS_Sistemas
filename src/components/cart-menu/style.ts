@@ -34,6 +34,10 @@ export const CartContainer = styled.div<{ isOpen: boolean }>`
     text-wrap: balance;
     font-size: 27px;
   }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    max-width: none;
+  }
 
   .product-container {
     width: 100%;
@@ -44,8 +48,16 @@ export const CartContainer = styled.div<{ isOpen: boolean }>`
     box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.05);
     background: white;
 
+    @media only screen and (max-width: 768px) {
+      flex-direction: column !important;
+      height: 200px !important;
+    }
+
     .item-name {
       max-width: 70px;
+      @media only screen and (max-width: 768px) {
+        max-width: 160px;
+      }
     }
 
     .price-product {
@@ -54,6 +66,9 @@ export const CartContainer = styled.div<{ isOpen: boolean }>`
       font-style: normal;
       font-weight: 700;
       line-height: 17px;
+      @media only screen and (max-width: 768px) {
+        font-size: 18px;
+      }
     }
 
     .close-product {
@@ -74,6 +89,10 @@ export const CartContainer = styled.div<{ isOpen: boolean }>`
   }
   .products-list {
     max-height: 60%;
+
+    @media only screen and (max-height: 667px) {
+      max-height: 40%;
+    }
   }
   .count-product {
     max-width: 150px;
@@ -115,6 +134,10 @@ export const CartContainer = styled.div<{ isOpen: boolean }>`
       h2 {
         color: ${(props) => props.theme.colors.primary};
       }
+    }
+    @media only screen and (max-width: 768px) {
+      width: 100vw;
+      max-width: none;
     }
   }
 `;
