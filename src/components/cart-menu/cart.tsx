@@ -55,10 +55,14 @@ const CartMenu: React.FC<CartMenuProps> = ({
   };
 
   const handleSubmitProducts = () => {
-    messageService.success("Sucesso", "Compra realizada com sucesso.");
-    setCartItems([]);
-    updateCartItems([]);
-    onClose();
+    if (cartItems.length > 0) {
+      messageService.success("Sucesso", "Compra realizada com sucesso.");
+      setCartItems([]);
+      updateCartItems([]);
+      onClose();
+    } else {
+      messageService.error("Erro", "Nenhum produto no carrinho.");
+    }
   };
 
   useEffect(() => {

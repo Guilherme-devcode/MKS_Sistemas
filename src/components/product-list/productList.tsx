@@ -38,6 +38,8 @@ const ProductList: React.FC<ListProductsProps> = ({
       const newCartItems = [...receivedCartItems, { ...product, quantity: 1 }];
       messageService.success("Sucesso", "Produto adicionado ao carrinho.");
       updateCartItems(newCartItems);
+    } else {
+      messageService.error("Erro", "Produto já adicionado ao carrinho.");
     }
   };
 
